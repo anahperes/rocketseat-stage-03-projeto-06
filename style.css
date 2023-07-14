@@ -1,0 +1,147 @@
+/* AJUSTES GLOBAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* AJUSTES DE UNIDADES E VARIÁVEIS NA RAÍZ */
+:root {
+    font-size: 62.5%;
+    --fs-heading: clamp(2.8rem, 2vw + 1rem, 4rem);              /* ANTES DE USAR O CLAMP AQUI, EU COLOQUEI UM VALOR PRA ESSA VARIÁVEL AQUI E OUTRO VALOR PARA MESMA VARIÁVEL NO @MEDIA DESKTOP. ASSIM NÃO ERA PRECISO DETERMINAR OUTRA VARIÁVEL PARA VERSÃO DESKTOP, POIS ELA PUXA O SETUP AQUI DESTA PARTE DE MOBILE, PORÉM COM O VALOR CONFIGURADO NO @MEDIA DESKTOP */
+    --fs-texting: clamp(1.4rem, 1vw + 0.5rem, 3rem);
+    
+    --ff-heading: 'source-serif-pro', serif;
+    --ff-texting: 'Source Serif 4', serif;
+   
+    --fc-primary: hsl(13, 61%, 40%);
+    --fc-secondary: hsl(0, 0%, 100%);
+}
+
+/* AJUSTES DO CORPO */
+body {
+    font-size: 1.6rem;
+    font-family: var(--ff-heading);
+    color: var(--fc-primary);
+
+    background: url(./assets/old-paper-texture-beige-craft-cardboard-vintage-canvas-surface\ 1.png);
+}
+
+/* AJUSTES DO MAIN */
+main {
+    max-width: 32rem;
+
+    margin-inline: auto;                /* SÃO AS MARGENS LATERAIS */
+
+    padding: 5.6rem 4rem;
+
+    box-sizing: content-box;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+
+/* AJUSTE DA RESPONSIVIDADE DA IMAGEM */
+img {
+    width: 100%;
+
+    margin-block: 3.2rem;               /* SÃO AS MARGENS VERTICAIS */
+}
+
+/* AJUSTES DO BOTÃO */
+button {
+    font-family: var(--ff-texting);
+
+    color: var(--fc-secondary);
+    background-color: var(--fc-primary);
+
+    border: none;
+    border-radius: 5px;
+
+    padding: 0.8rem 1.2rem;
+    margin-top: 3.2rem;
+}
+
+/* AJUSTES DO H1 E H2 */
+h1, h2 {
+    font-size: var(--fs-heading);
+    line-height: 3.6rem;
+}
+
+/* AJUSTES DO H2 "MODO DE PREPARO" MAIOR */
+h2 {
+    margin-bottom: 3.2rem;
+}
+
+/* AJUSTES DE PARÁGRAFO, ITENS DAS LISTAS E "INGREDIENTES" E "MODO DE PREPARO" */
+p, li, strong {
+    font-family: var(--ff-texting);
+    font-size: var(--fs-texting);
+    font-weight: 400;
+
+    line-height: 1.8rem;
+}
+
+/* AJUSTES DAS LISTAS */
+ul, ol {
+    padding-left: 2.4rem;
+}
+
+/* MARGEM DA LISTA DE INGREDIENTES */
+ul {
+    margin-bottom: 2.4rem;
+}
+
+/* RESPONSIVIDADE */
+@media (min-width: 1024px) {
+    /* AJUSTES DE UNIDADES E VARIÁVEIS PARA DESKTOP */
+    :root {
+        font-size: 62.5%;
+
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    
+    /* AJUSTES DE DISPLAY FLEX DO MAIN */
+    main {
+        flex-direction: row;
+        gap: 16rem;
+
+        max-width: fit-content;
+
+        padding: 9rem 6rem;
+    }
+
+    /* AJUSTE DE COMPRIMENTO DO BLOCO DE RECEITA */
+   .receita {
+    max-width: 43.5rem;
+   }
+
+   /* AJUSTE DE COMPRIMENTO DOS BLOCOS DE INGREDIENTES E PREPARO */
+   .ingredientes_e_preparo {
+    max-width: 50rem;
+   }
+
+   /* AJUSTES DE TEXTO DO H1 E H2 */
+   h1, h2 {
+    line-height: 5rem;
+   }
+
+   /* AJUSTES DE PARÁGRAFOS, ITENS DAS LISTAS E "INGREDIENTES" E "MODO DE PREPARO" */
+   p, li, strong {
+    line-height: 2.5rem;
+    font-weight: 400;
+   }
+
+   /* AJUSTES DO BOTÃO */
+   button {
+    padding: 1rem 2rem;
+
+    line-height: 2.4rem;
+   }
+}
+
