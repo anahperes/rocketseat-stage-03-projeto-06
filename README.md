@@ -1,5 +1,5 @@
 <p align="center">
-<img src=".github/projeto 06 cheesecake ana helena peres" alt="screenshot of projeto 06 cheesecake">
+<img src="https://i.imgur.com/qMf21oZ.png" alt="screenshot of projeto 06 cheesecake">
 </p>
 
 🇺🇸
