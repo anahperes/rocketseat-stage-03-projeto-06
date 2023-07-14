@@ -38,4 +38,4 @@ Este projeto foi desenvolvido utilizando as seguintes tecnologias:
 
 
 ## 🖌 LAYOUT
-Você pode conferir o layout original [clicando aqui](hhttps://www.figma.com/file/5avETbmRolK0EQGOLnX5t9/Cheesecake-%E2%80%A2-Projeto-Explorer-(Community)-(Copy)?type=design&node-id=0%3A1&mode=dev).
+Você pode conferir o layout original [clicando aqui](https://www.figma.com/file/5avETbmRolK0EQGOLnX5t9/Cheesecake-%E2%80%A2-Projeto-Explorer-(Community)-(Copy)?type=design&node-id=0%3A1&mode=dev).
